@@ -179,7 +179,7 @@ class NoteLink(models.Model):
         db_table = 'note_links'
         verbose_name = 'Note Link'
         verbose_name_plural = 'Note Links'
-        unique_together = [['source_note', 'target_note', 'link_type']]
+        unique_together = ('source_note', 'target_note', 'link_type')
         indexes = [
             models.Index(fields=['source_note', 'link_type'], name='idx_source_link_type'),
             models.Index(fields=['target_note', 'link_type'], name='idx_target_link_type'),
