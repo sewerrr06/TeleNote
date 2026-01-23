@@ -1,4 +1,8 @@
-asgiref==3.11.0
-Django==6.0.1
-python-dotenv==1.0.1
-sqlparse==0.5.5
+Django>=5.0
+djangorestframework
+psycopg2-binary  # драйвер для PostgreSQL
+python-dotenv    # для читання .env файлів
+celery           # для фонових задач
+redis            # драйвер для Redis
+aiogram          # для бота
+psycopg
